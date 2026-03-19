@@ -1,0 +1,99 @@
+@font-face {
+    font-family: light;
+    src: url(./AeonikTRIAL-Light.otf);
+}
+@font-face {
+    font-family: regular;
+    src: url(./AeonikTRIAL-Regular.otf);
+}
+@font-face {
+    font-family: bold;
+    src: url(./AeonikTRIAL-Bold.otf);
+}
+:root{
+    --pri:#FCDEC0;
+    --sec:#4B2E2B;
+    --tri:#B4846C;
+    --tri1:#7D5A50;
+}
+
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width:100%;
+    height:100%;
+    color: aliceblue;
+}
+.main{
+    height:100%;
+    width:100%;
+    background-color:var(--sec);
+}
+nav{
+    position: fixed;
+    width:100%;
+    height:60px;
+    background-color: var(--tri1);
+}
+section.allElems{
+    height: 100%;
+    width:100%;
+    padding:40px;
+    padding-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items:start;
+    gap:30px;
+    position: absolute;
+   
+    
+}
+.elems{
+    background-color: #FEBA17;
+    position: relative;
+    height:400px;
+    width:260px;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all ease 0.2s;
+     cursor: pointer;
+    box-shadow: 10px 5px 20px rgba(0,0,0,0.2);
+}
+.elems img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+.elems h2{
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    font-size: 30px;
+}
+.elems:active{
+    scale: 0.97;
+}
+.fullElem{
+    height:100%;
+    width:100%;
+    background-color: #4B2E2B;
+    padding: 20px;
+display: none;
+position: absolute;
+}
+.back{
+    background-color: red;
+    padding:10px;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 300;
+    color: azure;
+    border: none;
+    position: absolute;
+    right:5%;
+}
