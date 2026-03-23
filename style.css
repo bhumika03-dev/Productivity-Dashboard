@@ -220,3 +220,48 @@ position: absolute;
 .to-do-list-fullPage .todo-container .allTask #taskimp.false{
   opacity: 0;
 }
+/* //Daily planner */
+
+.daily-planner-fullPage{
+    display:block;
+}
+.daily-planner-fullPage h1{
+    font-size:60px;
+}
+.daily-planner-fullPage .day-planner{
+    background-color: #B4846C;
+    height: 85%;
+    margin-top: 40px;
+    width:100%;
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    overflow: auto;
+}
+.daily-planner-fullPage .day-planner .day-planner-time{
+background-color: #7D5A50;
+display: flex;
+align-items: center;
+position: relative;
+width: 49%;
+margin-bottom: 15px;
+}
+.day-planner .day-planner-time p{
+    position: absolute;
+    top:10%;
+    left:1%;
+    font-size: 18px;
+}
+.day-planner .day-planner-time input{
+    padding:20px 40px;
+    width:100%;
+    background-color: #4B2E2B;
+    border-radius: 5px;
+    border:none;
+    font-size: 26px;
+    padding-top: 30px;
+}
+  
